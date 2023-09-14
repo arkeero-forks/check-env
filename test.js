@@ -2,6 +2,7 @@ var assert = require('assert');
 var checkEnv = require('./index');
 
 describe('check-env', function() {
+  require('dotenv').config();
   before(function() {
     process.env.OTHER_VAR = 'test';
   });
