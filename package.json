@@ -1,10 +1,10 @@
 {
-  "name": "check-env",
-  "version": "1.3.0",
+  "name": "@arkeero-tech/check-env",
+  "version": "1.3.1",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ekmartin/check-env.git"
+    "url": "git@github.com:arkeero-tech/check-env.git"
   },
   "main": "index.js",
   "bin": "bin.js",
@@ -13,14 +13,18 @@
     "mocha": "istanbul cover _mocha && istanbul report cobertura",
     "test": "npm run lint && npm run mocha"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "internal"
+  },
   "author": "Martin Ek <mail@ekmartin.com>",
   "license": "MIT",
   "devDependencies": {
     "istanbul": "^0.4.2",
-    "jshint": "^2.6.0",
-    "mocha": "^5.0.0"
+    "jshint": "^2.13.6",
+    "mocha": "^10.2.0"
   },
   "dependencies": {
-    "cowsay": "^1.1.9"
+    "dotenv": "^16.3.1"
   }
 }

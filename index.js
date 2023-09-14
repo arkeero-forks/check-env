@@ -1,4 +1,5 @@
 module.exports = function(variables) {
+  require('dotenv').config();
   var missing = [];
 
   variables.forEach(function(variable) {
