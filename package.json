@@ -1,6 +1,6 @@
 {
   "name": "@arkeero-tech/check-env",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
     "type": "git",
