@@ -1,5 +1,5 @@
 {
-  "name": "@arkeero-tech/check-env",
+  "name": "@arkeero-forks/check-env",
   "version": "1.4.1",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
