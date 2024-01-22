@@ -13,6 +13,7 @@
     "mocha": "istanbul cover _mocha && istanbul report cobertura",
     "test": "npm run lint && npm run mocha"
   },
+  "type":"module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "internal"
