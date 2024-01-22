@@ -1,6 +1,6 @@
 {
   "name": "@arkeero-forks/check-env",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "mocha": "istanbul cover _mocha && istanbul report cobertura",
     "test": "npm run lint && npm run mocha"
   },
-  "type":"module",
+  "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "internal"
