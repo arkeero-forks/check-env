@@ -6,12 +6,18 @@
     "type": "git",
     "url": "git@github.com:arkeero-tech/check-env.git"
   },
-  "main": "index.ts",
-  "bin": "bin.js",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/bin.js"
+  ],
+  "main": "dist/index.js",
+  "bin": "dist/bin.js",
   "scripts": {
     "lint": "jshint --exclude-path .gitignore .",
     "mocha": "istanbul cover _mocha && istanbul report cobertura",
-    "test": "npm run lint && npm run mocha"
+    "test": "npm run lint && npm run mocha",    
+    "build": "tsc"
   },
   "type": "module",
   "publishConfig": {
@@ -21,10 +27,11 @@
   "author": "Martin Ek <mail@ekmartin.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.11.5",
     "istanbul": "^0.4.2",
     "jshint": "^2.13.6",
-    "@types/node": "^20.11.5",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "dotenv": "^16.3.1"

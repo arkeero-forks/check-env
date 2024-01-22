@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var check = require('./');
+const check = require('./');
 
 try {
   check(process.argv.slice(2));
