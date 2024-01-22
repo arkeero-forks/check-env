@@ -1,6 +1,6 @@
 {
   "name": "@arkeero-forks/check-env",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "scripts": {
     "lint": "jshint --exclude-path .gitignore .",
     "mocha": "istanbul cover _mocha && istanbul report cobertura",
-    "test": "npm run lint && npm run mocha",    
+    "test": "npm run lint && npm run mocha",
     "build": "tsc"
   },
   "type": "module",
