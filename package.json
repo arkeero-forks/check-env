@@ -19,7 +19,6 @@
     "test": "npm run lint && npm run mocha",
     "build": "tsc"
   },
-  "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "internal"
