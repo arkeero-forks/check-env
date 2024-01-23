@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-const check = require('./');
+import { checkEnv } from ".";
 
 try {
-  check(process.argv.slice(2));
+  checkEnv(process.argv.slice(2));
 } catch (err) {
   console.error(err.message);
   process.exit(1);

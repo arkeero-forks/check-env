@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 "use strict";
-const check = require('./');
+Object.defineProperty(exports, "__esModule", { value: true });
+const _1 = require(".");
 try {
-    check(process.argv.slice(2));
+    (0, _1.checkEnv)(process.argv.slice(2));
 }
 catch (err) {
     console.error(err.message);
